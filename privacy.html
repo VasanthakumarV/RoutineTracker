@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Privacy Policy · Routine Tracker</title>
+<meta name="description" content="How Routine Tracker handles your data: stored on your device, optionally synced end-to-end encrypted through your own Google Drive.">
+<meta name="theme-color" content="#2a7436">
+<link rel="icon" href="icon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="mx-auto max-w-3xl px-4 pb-16">
+<header class="mb-8 flex flex-wrap items-center gap-x-5 gap-y-3 border-b border-line py-5"><a class="me-auto flex items-center gap-2.5 font-bold text-fg no-underline hover:no-underline" href="index.html"><img class="size-8" src="icon.svg" alt="">Routine Tracker</a><nav class="flex gap-4 text-[0.95rem]"><a class="text-dim" href="index.html">Home</a><a class="text-dim" href="support.html">Support</a><a class="font-semibold text-fg" href="privacy.html" aria-current="page">Privacy</a></nav></header>
+<main>
+<h1 class="mb-3 text-[clamp(1.8rem,5vw,2.4rem)] leading-tight font-bold">Privacy policy</h1>
+<p class="text-sm text-dim">Effective 18 November 2026</p>
+
+<p>Routine Tracker is a habit tracker made by Vasanthakumar V, available as apps and as a web version. Your data stays on your device, or in your own Google Drive, encrypted, if you turn on sync. There's no Routine Tracker account, no ads, no analytics and no crash reporting, and the developer has no server that receives your data.</p>
+
+<h2>What's stored on your device</h2>
+<p>In the apps, that's your device's storage. In the web version (<a href="app/">vasanthakumarv.github.io/RoutineTracker/app</a>), it's your browser's private storage for this site, on your computer. The web page is served by GitHub Pages, but your data isn't sent there.</p>
+<p>The app stores what you enter or import: habits and their check-offs, habits you're breaking and the urges you log, notes and the reasons you wrote down, time you log and your aims, areas, identities, reminders and settings. Files you import (a Routine Tracker export or a Loop Habit Tracker backup) are read on your device and aren't uploaded anywhere by the app.</p>
+<p>In the apps, your device's own storage protection applies; the optional app lock keeps people out of the app but doesn't add its own encryption. In the web version, turning on the app lock also encrypts the data kept in the browser with a key protected by your lock password. Without the lock, anyone who can use that browser profile can read the data.</p>
+
+<h2>Google Drive sync (optional)</h2>
+<p>If you connect Google Drive, the app keeps a copy of your data in a "Routine Tracker" folder in your own Drive so that your devices can sync. Everything is <strong>encrypted on your device before it's uploaded</strong> (XChaCha20-Poly1305), with a key protected by a passphrase you choose. The passphrase never leaves your device. Neither Google nor the developer can read your habits. Data is sent to Google over an encrypted connection and is covered by <a href="https://policies.google.com/privacy">Google's Privacy Policy</a>.</p>
+<p>The app asks only for the <code>drive.file</code> permission, which lets it use files it created itself. It can't see your other Drive files. Your sign-in and the sync key are kept in your system's secure storage (on Android, protected with a key held in the Android Keystore). In the web version, the page gets short-lived access from Google through Google's sign-in, and keeps it and the sync key only in that browser's storage for this site. No long-term sign-in token is stored there.</p>
+<p>Routine Tracker's use and transfer of information received from Google APIs adheres to the <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, including the Limited Use requirements. That information is used only to provide sync, and isn't sold, used for advertising or shared with anyone else.</p>
+<p>Apart from Google sign-in and Drive, the app makes no internet requests.</p>
+
+<h2>Reminders, alarms and widgets</h2>
+<p>Reminders and alarms are scheduled on your device by your operating system; nothing is sent to a server to deliver them. If you turn on the app lock, reminders don't show habit names. Home-screen widgets show your garden and how the day is going; habit names appear on them only if you turn on <b>Show habit names</b>.</p>
+
+<h2>App lock</h2>
+<p>If you set an app lock, only a check of a key made from the password is stored, and it isn't synced to Drive. Fingerprint, face or Touch ID unlock is handled by your operating system, and the app never sees biometric data.</p>
+
+<h2>Optional tips</h2>
+<p>Tips in the Android app are handled by Google Play, so your payment details go to Google and aren't seen by the app. The app records the date of your first tip with your data, to show that you're a supporter. On desktop and in the browser, the app can open a web page for supporting the app, which is outside the app. Tips made on Ko-fi are handled by Ko-fi under its own policies.</p>
+
+<h2>Android device backup</h2>
+<p>If Android backup is on for your device, Android may include this app's data in your device backup to your Google account. Your Google sign-in and sync key are left out of it. You control this in your device settings.</p>
+
+<h2>Sharing</h2>
+<p>The developer doesn't collect, sell or share your personal data. Data only leaves your device in the ways described above, or when you export it yourself.</p>
+
+<h2>Keeping and deleting your data</h2>
+<ul>
+  <li><strong>On your device:</strong> delete habits and logs in the app, or uninstall the app to remove its data from that device. For the web version, clear this site's data in your browser's settings.</li>
+  <li><strong>In Google Drive:</strong> delete the "Routine Tracker" folder from your Drive.</li>
+  <li><strong>Drive access:</strong> disconnect in the app, or remove the app's access in your <a href="https://myaccount.google.com/connections">Google Account</a>.</li>
+</ul>
+<p>Because the developer doesn't hold your data, these steps are in your hands and can't be done for you. If you forget both your sync passphrase and your recovery key, the data in Drive can't be decrypted by anyone, including the developer.</p>
+
+<h2>Children</h2>
+<p>Routine Tracker isn't directed at children under 13.</p>
+
+<h2>Changes</h2>
+<p>If this policy changes, the new version will be published here with a new effective date.</p>
+
+<h2>Contact</h2>
+<p>Questions about this policy: <a href="mailto:vasanth260m12@gmail.com">vasanth260m12@gmail.com</a></p>
+</main>
+<footer class="mt-12 flex flex-wrap gap-4 border-t border-line pt-5 text-sm text-dim"><span>Routine Tracker</span><a class="text-dim" href="privacy.html">Privacy policy</a><a class="text-dim" href="support.html">Support the app</a><a class="text-dim" href="mailto:vasanth260m12@gmail.com">Contact</a></footer>
+</div>
+</body>
+</html>

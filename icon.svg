@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <!-- Routine Tracker: a clock whose hands are a sprout's two leaves (ten
+       past ten), its stem where the seconds would be. Colours are the app's
+       own (styles/input.css): leaf green, seed-packet cream, terracotta. -->
+  <defs>
+    <linearGradient id="tile" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#34853f"/>
+      <stop offset="1" stop-color="#235f2d"/>
+    </linearGradient>
+  </defs>
+  <rect x="64" y="64" width="896" height="896" rx="200" fill="url(#tile)"/>
+  <!-- the dial, sitting on the tile like the app's panels on their ledge -->
+  <circle cx="512" cy="530" r="312" fill="#1b4d24"/>
+  <circle cx="512" cy="512" r="312" fill="#fffaf0"/>
+  <g transform="translate(512 512)">
+    <!-- hours: a mark at each quarter, a dot at the rest -->
+    <g stroke="#cdbb93" stroke-width="16" stroke-linecap="round">
+      <path d="M0 -288V-256"/>
+      <path d="M288 0H256"/>
+      <path d="M0 288V256"/>
+      <path d="M-288 0H-256"/>
+    </g>
+    <g fill="#dccdaa">
+      <circle r="9" cy="-272" transform="rotate(30)"/>
+      <circle r="9" cy="-272" transform="rotate(60)"/>
+      <circle r="9" cy="-272" transform="rotate(120)"/>
+      <circle r="9" cy="-272" transform="rotate(150)"/>
+      <circle r="9" cy="-272" transform="rotate(210)"/>
+      <circle r="9" cy="-272" transform="rotate(240)"/>
+      <circle r="9" cy="-272" transform="rotate(300)"/>
+      <circle r="9" cy="-272" transform="rotate(330)"/>
+    </g>
+    <!-- the stem -->
+    <path d="M0 0V196" stroke="#2a7436" stroke-width="26" stroke-linecap="round"/>
+    <!-- the hour hand: the younger leaf -->
+    <g transform="rotate(-60)">
+      <path d="M0 0C58 -52 62 -122 0 -172C-62 -122 -58 -52 0 0Z" fill="#4fa85a"/>
+      <path d="M0 -40V-116" stroke="#fffaf0" stroke-opacity=".6" stroke-width="8" stroke-linecap="round"/>
+    </g>
+    <!-- the minute hand: the taller leaf -->
+    <g transform="rotate(60)">
+      <path d="M0 0C74 -72 80 -170 0 -236C-80 -170 -74 -72 0 0Z" fill="#2a7436"/>
+      <path d="M0 -48V-168" stroke="#fffaf0" stroke-opacity=".6" stroke-width="8" stroke-linecap="round"/>
+    </g>
+    <!-- the pin -->
+    <circle r="26" fill="#a4501a"/>
+    <circle r="9" fill="#fffaf0"/>
+  </g>
+</svg>
